@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -15,6 +16,8 @@ import java.util.Calendar;
 
 public class Main4Activity extends AppCompatActivity {
     private static Button button_five;
+
+
 
 
     @Override
@@ -42,14 +45,14 @@ public class Main4Activity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.example.sindhura.activitymonitering.Main5Activity");
-                        Endtimer("_asdf", "asdf");
+                       // Endtimer("_asdf", "asdf");
                         startActivity(intent);
 
                     }
                 }
         );
     }
-    public boolean Endtimer(String taskId,String categoryId)
+   /* public boolean Endtimer(String taskId,String categoryId)
     {
 
         Global global = new Global();
@@ -72,7 +75,7 @@ public class Main4Activity extends AppCompatActivity {
 
 
         return  true;
-    }
+    }*/
 }
 
 

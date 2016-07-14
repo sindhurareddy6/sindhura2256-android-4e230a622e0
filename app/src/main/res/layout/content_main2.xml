@@ -61,10 +61,10 @@
         android:layout_height="wrap_content"
         android:text="Add Course"
         android:id="@+id/button5"
+        android:background="@drawable/border_style"
+        android:textColor="#ffffff"
         android:layout_below="@+id/editText_date1"
         android:layout_alignLeft="@+id/editText_date1"
-        android:layout_alignStart="@+id/editText_date1"
-        android:layout_marginTop="154dp"
-        android:background="#0000A0" />
+        android:layout_alignStart="@+id/editText_date1" />
 
 </RelativeLayout>

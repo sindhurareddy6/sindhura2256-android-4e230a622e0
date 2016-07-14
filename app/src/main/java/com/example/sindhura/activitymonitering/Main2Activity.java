@@ -68,16 +68,18 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         String Name = editText_name.getText().toString();
-        String W_hours = editText_number.getText().toString();
+        Long W_hours = editText_number.getDrawingTime();
         String S_date = editText_date.getText().toString();
         String E_date = editText_date1.getText().toString();
         switch (v.getId()) {
             case R.id.button5:
+
                 AddCourse x = new AddCourse(Name, W_hours, S_date, E_date);
                 x.save();
                 adapter.add(x);
                 Intent intent = new Intent("com.example.sindhura.activitymonitering.MainActivity");
                 startActivity(intent);
+
                 Toast toast= Toast.makeText(Main2Activity.this,"course       "+Name+"    has been added",Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.show();

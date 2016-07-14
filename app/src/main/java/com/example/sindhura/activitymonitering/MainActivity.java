@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         button_sbm = (Button) findViewById(R.id.button);
         button_sbm.setOnClickListener(this);
-        Button button3=(Button)findViewById(R.id.button3);
-        button3.setOnClickListener(this);
+       // Button button3=(Button)findViewById(R.id.button3);
+       // button3.setOnClickListener(this);
         courseLv = (ListView) findViewById(R.id.courseLv);
         addCourses = (List<AddCourse>) AddCourse.listAll(AddCourse.class);
         adapter = new ArrayAdapter<AddCourse>(this, R.layout.simple_list_item, R.id.tV5);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,tV5.getText().toString(),Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent("com.example.sindhura.activitymonitering.Main3Activity");
                 startActivity(intent);
-                textView5=(TextView)findViewById(R.id.textView5);
+             //   textView5=(TextView)findViewById(R.id.textView5);
             }
         }
 
@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent("com.example.sindhura.activitymonitering.Main2Activity");
                 startActivity(intent);
                 break;
-            case R.id.button3:
+           /* case R.id.button3:
                 AddCourse.deleteAll(AddCourse.class);
                 adapter.clear();
-                break;
+                break;*/
         }
 
 
